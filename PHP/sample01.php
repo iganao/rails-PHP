@@ -7,9 +7,6 @@
   <title>Backpacker200209</title>
 </head>
 <body>
-  <?php
-  echo "テスト"
-  ?>
 </body>
 </html>
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./../css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backpacker200209</title>
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+        <div class="nav__left">
+          <a href="/">
+            <img class="icon" src="logo8.png">
+  <script type="text/javascript">
+    // img要素を取得する
+    let img = document.getElementById("image_place");
+    // 表示する画像番号
+    let idx = 1;
+  </script>
+        </div>
+            <div class="font">Backpacker</div>
+          </a>
+
+        <% if user_signed_in? %>
+          <div class="nav__right">
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, class: :nav__btn %>
+            <%= link_to "New Article", new_article_path, class: :nav__btn %>
+          </div>
+
+        <% else %>
+          <div class="nav__right">
+            <%= link_to "Login", new_user_session_path, class: :nav__btn %>
+            <%= link_to "SignUp", new_user_registration_path, class: :nav__btn %>
+          </div>
+        <% end %>
+    </div>
+    <div class="inner">
+    </div>
+  </header>
+  <%= yield %>
+  <footer class="footer">
+    <p class="copyright">Copyright © Backpacker 200209 All rights reserved.</p>
+  </footer>
+</body>
+</html>
