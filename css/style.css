@@ -1,5 +1,118 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
 /* ヘッダー */
+
+.header {
+  padding: 0px 0;
+}
+
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+
+.grid-6 {
+  width: 48.2%;
+}
+
+.logo {
+  width: 200px;
+}
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 1.2em;
+  color: #ffe9c6;
+  background-color: #000000;
+  text-decoration: none;
+  user-select: none;
+  border: 2px #000000 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  font-family: 'Times','Phosphate','Trattatello','Hannotate TC','HanziPen SC','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+.nav__btn:hover{
+  color: #000000;
+  background: #ffe9c6;
+}
+
 .icon{
   height: 200px;
   width: 200px;
+}
+
+.font{
+  font-family: 'Apple Chancery','Hannotate SC',sans-serif;
+  font-size: 50px;
+}
+
+
+/* メイン */
+.main {
+  background-color: rgb(233, 233, 233);
+  background-size: 200px 200px;
+  padding-top: 48px;
+}
+
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+
+/* フッター */
+
+.footer {
+  background-color: #000000;
+  padding: 10px 0;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+  width: 100%;
+}
+.copyright {
+  text-align: center;
+  color: #CC9966;
+  font-size: 10px;
 }
